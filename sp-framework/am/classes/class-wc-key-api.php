@@ -12,16 +12,20 @@
 
 if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 
-class Api_Manager_theme_Example_Key {
+class Api_Manager_theme_Massimo_Key {
 
 	// API Key URL
 	public function create_software_api_url( $args ) {
 		
 		//$api_url = add_query_arg( 'wc-api', 'am-software-api', AMET()->upgrade_url );
 		
-		$site_url = $_SERVER['HTTP_HOST'];
-		
-		$api_url = add_query_arg( 'wc-api', 'am-software-api', $site_url );
+		  $pieces = parse_url(site_url());
+		  $domain = isset($pieces['host']) ? $pieces['host'] : '';
+		  if (preg_match('/(?P<domain>[a-z0-9][a-z0-9\-]{1,63}\.[a-z\.]{2,6})$/i', $domain, $m)) {
+			$site_url = $m['domain'];
+		  }
+						
+		$api_url = add_query_arg( 'wc-api', 'am-software-api', "$site_url");
 		
 		return $api_url . '&' . http_build_query( $args );
 	}
