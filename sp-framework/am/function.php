@@ -159,7 +159,7 @@ class API_Manager_theme_Massimo {
 			$this->ame_deactivate_checkbox 			= 'am_deactivate_massimo_checkbox';
 			$this->ame_activation_tab_key 			= 'api_manager_theme_massimo_dashboard';
 			$this->ame_deactivation_tab_key 		= 'api_manager_theme_massimo_deactivation';
-			$this->ame_settings_menu_title 			= 'AM Theme Massimo';
+			$this->ame_settings_menu_title 			= 'SP Theme Massimo';
 			$this->ame_settings_title 				= 'API Manager Theme Massimo';
 			$this->ame_menu_tab_activation_title 	= __( 'License Activation', 'api-manager-massimo' );
 			$this->ame_menu_tab_deactivation_title 	= __( 'License Deactivation', 'api-manager-massimo' );
