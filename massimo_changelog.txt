@@ -1,7 +1,9 @@
 Massimo Changelog
 
 {3.7.1} - 6/1/15
-Update - Changed path to XML file checking for updates
+Update - Added API Manager
+Update - Added styling for 3 levels of drop-downs
+Update - Internal framework mod
 
 {3.7.0} - 2/11/15
 Update - WooCommerce 2.3.0 templates
