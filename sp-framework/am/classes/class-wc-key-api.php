@@ -18,7 +18,7 @@ class Api_Manager_theme_Massimo_Key {
 	public function create_software_api_url( $args ) {
 		
 		//$api_url = add_query_arg( 'wc-api', 'am-software-api', AMET()->upgrade_url );
-		
+								
 		$api_url = add_query_arg( 'wc-api', 'am-software-api', "http://splashingpixels.com");
 		
 		return $api_url . '&' . http_build_query( $args );
@@ -54,7 +54,9 @@ class Api_Manager_theme_Massimo_Key {
 
 		$response = wp_remote_retrieve_body( $request );
 
-		return $response;
+		$response_filtered = ltrim($response, '0');
+				
+		return $response_filtered;
 	}
 
 	public function deactivate( $args ) {
