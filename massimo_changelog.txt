@@ -1,5 +1,9 @@
 Massimo Changelog
 
+{3.4.5} - 8/22/16
+Update - update woocommerce templates
+
+
 {3.7.1} - 6/1/15
 Update - Added API Manager
 Update - Added styling for 3 levels of drop-downs
