@@ -1,6 +1,6 @@
 Massimo Changelog
 
-{3.4.5} - 8/22/16
+{3.7.5} - 8/22/16
 Update - update woocommerce templates
 
 
